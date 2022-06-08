@@ -56,7 +56,7 @@ compose_pipeline = compose(
 )
 
 with Pool() as pool:
-    result = pool.map(split_lines, load_data("/content/credit.csv"))
+    result = pool.map(split_lines, load_data("credit.csv"))
     result = concat(result)
     result = pool.map(compose_pipeline, result)
 
