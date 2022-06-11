@@ -8,4 +8,4 @@ if __name__ == "__main__":
         # se separan las columnas separadas
         lista = line.split("\t")
         # se genera la salida del dato llamando la columna objetivo
-        sys.stdout.write("{},{}\n".format(lista[0].strip(), lista[1]))
+        sys.stdout.write("{},{}\n".format(lista[0], lista[1]))
