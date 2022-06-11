@@ -3,9 +3,13 @@
 #
 import sys
 
+
 if __name__ == "__main__":
     for line in sys.stdin:
-        # se separan las columnas separadas
-        lista = line.split("  ")
-        # se genera la salida del dato llamando la columna objetivo
-        sys.stdout.write("{}\t{}\t{}\n".format(lista[0], lista[1], (lista[2])))
+        tercera_columna = line.split("   ")[2].strip()
+        tercera_columna = tercera_columna.zfill(4)
+        sys.stdout.write(
+            "{} {} {}\n".format(
+                str(line.split("   ")[0]), tercera_columna, line.split("   ")[1]
+            )
+        )
