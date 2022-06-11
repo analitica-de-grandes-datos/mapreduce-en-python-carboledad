@@ -13,3 +13,4 @@ if __name__ == "__main__":
                 str(line.split("   ")[0]), tercera_columna, line.split("   ")[1]
             )
         )
+
